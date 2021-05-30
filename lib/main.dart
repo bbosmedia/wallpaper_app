@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:wallpaper_app/walpaper.dart';
 
 void main() {
   runApp(MyApp());
@@ -9,7 +10,8 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-      home: WallpaperApp(),
+      theme: ThemeData(brightness: Brightness.dark),
+      home: WallPaperapp(),
     );
   }
 }
